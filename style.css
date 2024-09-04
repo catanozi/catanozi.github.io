@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Polly Rounded', Arial, Helvetica, sans-serif; 
+  background-color: #f0f0f0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px; 
+  height: auto; 
+  max-width: 400px;
+}
+
+.guess-word {
+  display: flex;
+  gap: 10px;
+  font-size: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+  max-width: 400px;
+}
+
+button {
+  height: 40px; 
+  width: 40px; 
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+}
+
+.btns button.correct {
+  background-color: #28a745;
+}
+
+.btns button.incorrect {
+  background-color: #dc3545;
+}
+
+.new {
+  width: 120px;
+  background-color: #3ba128;
+  margin: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.clue {
+  font-size: 18px;
+}
+
+.ranking, .score {
+  margin-top: 20px;
+}
+
+.ranking ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ranking li {
+  padding: 5px;
+}
+
+.score {
+  font-size: 15px;
+  margin-bottom: 20px; 
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 10px;
+  }
+
+  button {
+    height: 35px; 
+    width: 35px; 
+  }
+}
